@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscription Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+</head>
+<body>
+
+    <div id="subscription_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="subscribe_now">
+                <h4>Subscribe</h4>
+                <p>Get connected to our insights</p>
+                <form class="subscribe_form" id="subscribeForm">
+                  <div class="input-group">
+                     <input type="text" class="form-control" id="emailInput" name="email" placeholder="Enter your email">
+                     <span class="input-group-btn">
+                          <button class="btn btn-default" type="submit">Subscribe</button>
+                     </span>
+                  </div>
+                  <div id="error-msg"></div> 
+                  <div id="success-msg"></div> 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="script.js"></script>
+
+</body>
+</html>
