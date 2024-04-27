@@ -1,100 +1,64 @@
 body {
     background-color: #fbfbfb;
+    height: 100vh;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
   }
   
-  .subscribe_now h4 {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #34495e;
-    font-weight: 800;
-    text-align: center;
-  }
-  .subscribe_now p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    color: #34495e;
-    text-align: center;
-  }
-  
-  .subscribe_form {
-    max-width: 470px;
+  .sub_section {
+    max-width: 500px;
     width: 100%;
-    margin: 0 auto;
+    padding: 60px;
     box-shadow: 0px 2px 5px 0px rgba(10, 6, 20, 0.24);
+    background-color: #fff;
+    text-align: center;
   }
-  .subscribe_form:focus {
-    outline: none;
-  }
-  .subscribe_form .form-control {
-    border: none;
-  }
-  .subscribe_form .form-control:focus {
-    box-shadow: none;
-  }
-  .subscribe_form input {
-    height: 44px;
-  }
-  .subscribe_form button {
-    border: none;
-    height: 44px;
-    background-color: #0ed085;
-    color: #fff;
-    margin: -1px;
-    border-radius: 0;
-    width: 135px;
+  
+  .sub_section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 4px;
     text-transform: uppercase;
-    position: relative;
-    transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
   }
-  .subscribe_form button:hover, .subscribe_form button:focus, .subscribe_form button:active, .subscribe_form button:visited {
-    color: #fff;
-    background-color: rgba(14, 208, 133, 0.77);
-    outline: none;
-    transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-  }
-  .subscribe_form button:hover:before, .subscribe_form button:focus:before, .subscribe_form button:active:before, .subscribe_form button:visited:before {
-    background-color: rgba(14, 208, 133, 0.77);
-    transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-  }
-  .subscribe_form button:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: 1px;
-    background-color: #0ed085;
-    width: 100%;
-    transition: all ease 0.3s;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-  }
-  .subscribe_form .input-group-btn:last-child > .btn, .subscribe_form .input-group-btn:last-child > .btn-group {
-    z-index: 2;
-    margin-left: 0px;
-  }
-
-  #error-msg {
-    margin-top: 5px; 
+  
+  .sub_section p {
     font-size: 14px;
-}
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .sub_section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sub_section input[type="email"] {
+    flex: 1;
+    height: 40px;
+    margin-right: 1px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  
+  .sub_section button[type="submit"] {
+    height: 40px;
+    width: 100px;
+    background-color: #0ed085;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sub_section button[type="submit"]:hover {
+    background-color: rgba(14, 208, 133, 0.77);
+  }
+  
